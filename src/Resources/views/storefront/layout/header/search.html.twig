@@ -1,0 +1,9 @@
+{% sw_extends '@Storefront/storefront/layout/header/search.html.twig' %}
+
+{% block layout_header_search %}
+    {% if context.salesChannel.id == "01993ecd4e5075e791d5247912280b75" or context.salesChannel.id == "0198091f6622790e9f816566addae0fb" %}
+        {# Remove for this sales channel #}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

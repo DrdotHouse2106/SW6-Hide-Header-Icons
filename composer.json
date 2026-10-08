@@ -1,0 +1,23 @@
+{
+  "name": "custom/hide-header-icons",
+  "description": "Blendet Suchleiste, Favoriten, Warenkorb und Kundenkonto im Header aus",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.33",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "*",
+    "shopware/storefront": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "HideHeaderIcons\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "HideHeaderIcons\\HideHeaderIcons",
+    "label": {
+      "de-DE": "Hide Header Icons",
+      "en-GB": "Hide Header Icons"
+    }
+  }
+}

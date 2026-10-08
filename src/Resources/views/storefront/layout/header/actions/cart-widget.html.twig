@@ -1,0 +1,9 @@
+{% sw_extends '@Storefront/storefront/layout/header/actions/cart-widget.html.twig' %}
+
+{% block layout_header_actions_cart_widget %}
+    {% if context.salesChannel.id == "" or context.salesChannel.id == "0198091f6622790e9f816566addae0fb" %}
+        {# Remove for this sales channel #}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
